@@ -1,0 +1,316 @@
+body {
+    background-color: #f4f8fb!important;
+}
+
+a {
+    color: #558b2f;
+}
+
+a:hover {
+    color: #234d12;
+}
+
+.text-mandatory {
+    color: #f44336!important;
+}
+
+
+/*BOOTSTRAP CUSTOM*/
+
+.form-control:focus {
+    border: 2px solid #234d12!important;
+}
+
+.selectize-input.focus {
+    border: 2px solid!important;
+    border-color: #234d12!important;
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.selectize-control.multi .selectize-input>div {
+    background: #558b2f!important;
+    color: #ffffff!important;
+    border: 0px solid #dee2e6;
+}
+
+.selectize-control.multi .selectize-input>div.active {
+    background: #234d12!important;
+    color: #ffffff!important;
+    border: 0px solid #dee2e6;
+}
+
+.selectize-dropdown .active {
+    background-color: #558b2f!important;
+    color: #f8f9fa!important;
+}
+
+.selectize-dropdown multi form-control select-search {
+    display: block!important;
+    visibility: visible!important;
+}
+
+.input-group-text {
+    background-color: #558b2f!important;
+    border: 1px solid #234d12;
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #558b2f;
+}
+
+.btn-primary:hover {
+    background-color: #234d12;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ffa000;
+}
+
+.btn-warning:hover {
+    background-color: #ff8f00;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #558b2f;
+}
+
+.btn-secondary:hover {
+    background-color: #234d12;
+}
+
+.sidebar-dark .nav-sidebar>.nav-item-open>.nav-link:not(.disabled),
+.sidebar-dark .nav-sidebar>.nav-item>.nav-link.active,
+.sidebar-light .card[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent) .nav-sidebar>.nav-item-open>.nav-link:not(.disabled),
+.sidebar-light .card[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent) .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #558b2f!important;
+}
+
+.sidebar-dark .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #558b2f!important;
+}
+
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button.current:focus,
+.dataTables_paginate .paginate_button.current:hover {
+    color: #fff;
+    background-color: #558b2f;
+}
+
+.sidebar-dark .sidebar-mobile-toggler:not([class*=bg-]) {
+    background-color: #689f38!important;
+}
+
+.sidebar-dark .nav-sidebar .nav-link>span {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform;
+    transition-property: transform
+}
+
+.nav-group-sub .nav-link {
+    padding: .625rem 1.25rem 0.625rem 1.5rem!important;
+}
+
+.sidebar-dark .nav-sidebar .nav-link:active>span,
+.sidebar-dark .nav-sidebar .nav-link:focus>span,
+.sidebar-dark .nav-sidebar .nav-link:hover>span {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px)
+}
+
+.sidebar-icon-custom-margin {
+    margin-left: -32px!important;
+    margin-right: 5px!important;
+}
+
+.select2-container {
+    outline: 0;
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+span.select2-container {
+    z-index: 10050;
+}
+
+
+/*PUBLIC CUSTOM*/
+
+.custom-primary-bg {
+    background-color: #558b2f!important;
+}
+
+.custom-secondery-bg {
+    background-color: #234d12!important;
+}
+
+.custom-bg-green {
+    background-color: #558b2f!important;
+}
+
+.custom-btn-success {
+    color: #fff!important;
+    background-color: #558b2f!important;
+}
+
+.custom-btn-success:hover {
+    color: #fff!important;
+    background-color: #234d12!important;
+}
+
+.custom-btn-print {
+    color: #fff;
+    background-color: #546e7a;
+}
+
+.custom-btn-print:hover {
+    color: #fff;
+    background-color: #607d8b;
+}
+
+.custom-border-success {
+    border-color: #558b2f!important;
+}
+
+.custom-text-success {
+    color: #558b2f!important;
+}
+
+.custom-input-group-dropdown-btn {
+    background-color: #558b2f!important;
+    border: 1px solid #234d12!important;
+    color: #FFFFFF;
+}
+
+.custom-input-group-dropdown-btn:hover {
+    color: #FFFFFF!important;
+    background-color: #234d12!important;
+}
+
+.custom-input-group-dropdown-btn.focus,
+.custom-input-group-dropdown-btn:focus,
+.custom-input-group-dropdown-btn:not([disabled]):not(.disabled).active,
+.btn-light:not([disabled]):not(.disabled):active,
+.show>.custom-input-group-dropdown-btn.dropdown-toggle {
+    color: #FFFFFF!important;
+}
+
+.custom-dropdown-menu-right {
+    position: absolute!important;
+    left: 70px!important;
+}
+
+.dt-button-collection:not(.fixed) {
+    top: 100%!important;
+    right: 0!important;
+}
+
+.dt-button-collection {
+    min-width: 3.25rem!important;
+    padding: 0px!important;
+    border-radius: 0rem!important;
+}
+
+.dt-button-collection:not(.fixed) {
+    top: 100%!important;
+    left: 12px!important;
+    right: 0!important;
+}
+
+div.dt-button-collection div.dropdown-menu {
+    display: block!important;
+    z-index: 99999999;
+    position: relative;
+}
+
+.dropdown-menu {
+    border: none!important;
+}
+
+.dropdown-item {
+    padding: 0.2rem 1rem!important;
+}
+
+.dropdown-item:hover {
+    color: #FFFFFF;
+    background-color: #558b2f!important;
+}
+
+@media print {
+    #get_table_data.table tfoot {
+        display: table-row-group;
+    }
+    .sidebar {
+        display: none!important;
+    }
+    .navbar {
+        display: none!important;
+    }
+    .page-header {
+        display: none!important;
+    }
+    .card-header {
+        display: none!important;
+    }
+    .card {
+        border: none!important;
+    }
+    .hide-filter-on-print{
+        display: none!important;
+    }
+}
+
+
+/*DATE PICKER*/
+
+@media (min-width: 564px) {
+    .daterangepicker {
+        width: 50%;
+    }
+    .daterangepicker .drp-calendar.right {
+        margin-left: 40px;
+    }
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: #234d12;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: #234d12;
+}
+
+.daterangepicker th {
+    color: #234d12;
+    font-weight: 700;
+}
+
+.daterangepicker.show-calendar .ranges {
+    margin-top: -1px;
+}
+
+.daterangepicker .ranges li {
+    padding: 10px 12px;
+}
+
+.dataTables_empty{
+    text-align: center;
+    font-size: 15px;
+}
+
+.invoice-table td {
+    vertical-align: top;
+}
