@@ -113,4 +113,7 @@ Route::middleware(['auth'])->group(function () {
     //     ->allowedFilters(['customer_id', 'account_id', 'purpose_id'])
     //     ->get();
     // });
+    Route::get('xyz',function(){
+        return view('xyz');
+    });
 });

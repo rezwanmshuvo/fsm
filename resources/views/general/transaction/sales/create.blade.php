@@ -60,10 +60,11 @@
                             <div class="col-md-3">
                                 <div class="form-group select-product-container">
                                     <label class="control-label">{{  ('Select Product') }}</label>
+                                    <input type="text" id="search_text" name="search_text" class="form-control" placeholder="Search products">
                                     <select class="form-control select2-ajax" data-value="id" data-display="item_name" data-table="items" data-where="2" name="item" id="item_id" onchange="getProductPrice(this.value)">
                                         <option value="">{{  ('Select Product') }}</option>
                                         @foreach($items as $item)
-                                            <option value="{{ $item->id }}" {{ (old('item_id') == $item->id) ? 'selected=selected' : ''}}>{{ $item->name }}</option>
+                                            <option name="hello" value="{{ $item->id }}" {{ (old('item_id') == $item->id) ? 'selected=selected' : ''}} class="product_option">{{ $item->name }}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -71,20 +72,20 @@
 
                             <div class="form-group col-md-2">
                                 <label for="item_id" class="text-mandatory">Unit Price</label>
-                                <input readonly type="text" class="form-control" name="unit_price" id="unit_price0" placeholder="Unit Price" />
+                                <input type="number" class="form-control" name="unit_price" id="unit_price0" placeholder="Unit Price" onkeyup="calc_total(0)"/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="item_id" class="text-mandatory">Quantity</label>
-                                <input type="text" class="form-control" name="quantity" id="quantity0" placeholder="Quantity" onkeyup="calc_total(0)" />
+                                <input type="number" class="form-control" name="quantity" id="quantity0" placeholder="Quantity" onkeyup="calc_total(0)" />
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="item_id" >Discount</label>
-                                <input type="text" class="form-control" name="discount" id="discount0" placeholder="Discount" onkeyup="calc_total(0)" />
+                                <input type="number" class="form-control" name="discount" id="discount0" placeholder="Discount" onkeyup="calc_total(0)" />
                             </div>
 
                             <div class="form-group col-md-2">
                                 <label class="control-label" >Total</label>
-                                <input readonly type="text" class="form-control" name="total" id="total0" />
+                                <input readonly type="number" class="form-control" name="total" id="total0" />
                             </div>
 
                             <div class="col-md-1">
@@ -297,7 +298,7 @@
                             $(".db_error").css("display", "block");
                             $('#db_error').text(data.message);
                         }else{
-                            var option = '<option value="' + data.customer_id + '">' + data.customer_name + '</option>';
+                            var option = '<option selected value="' + data.customer_id + '">' + data.customer_name + '</option>';
 
                             console.log(option);
 
@@ -323,6 +324,18 @@
                 }
             });
         }
-
+        $(document).ready(function(){
+            $("#search_text").keyup(function(){
+                let text = $("#search_text").val().toUpperCase();
+                $(".product_option").each(function(){
+                    if($(this).text().toUpperCase().includes(text)){
+                        $(this).show();
+                    }
+                    else{
+                        $(this).hide();
+                    }
+                });
+            });
+        });
     </script>
 @endpush
